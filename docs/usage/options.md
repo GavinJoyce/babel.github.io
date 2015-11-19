@@ -41,7 +41,7 @@ $ babel --name=value
 | `keepModuleIdExtensions` | `false`              | Keep extensions in module ids |
 | `code`                   | `true`               | Enable code generation |
 | `ast`                    | `true`               | Include the AST in the returned object |
-| `compact`                | `"auto"`             | Do not include superfluous whitespace characters and line terminators. When set to `"auto"` compact is set to `true` on input sizes of >100KB. |
+| `compact`                | `"auto"`             | Do not include superfluous whitespace characters and line terminators. When set to `"auto"` compact is set to `true` on input sizes of <100KB. |
 | `comments`               | `true`               | Output comments in generated output. |
 | `shouldPrintComment`     | null                 | An optional callback that controls whether a comment should be output or not. Called as `shouldPrintComment(commentContents)`. **NOTE:** This overrides the `comment` option when used. |
 | `env`                    | `{}`                 | <p>This is an object of keys that represent different environments. For example, you may have:</p> <pre><code>{ env: { production: { /* specific options */ } } }`</pre></code> <p>which will use those options when the enviroment variable <code>BABEL_ENV</code> is set to <code>"production"</code>. If <code>BABEL_ENV</code> isn't set then <code>NODE_ENV</code> will be used, if it's not set then it defaults to <code>"development"</code></p> |
